@@ -6,14 +6,15 @@ class Item extends StatelessWidget {
   const Item({
     super.key,
     required this.number,
+    required this.color,
   });
   final Number number;
-
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 110,
-      color: Colors.orange,
+      color: color,
       child: Row(
         children: [
           Container(

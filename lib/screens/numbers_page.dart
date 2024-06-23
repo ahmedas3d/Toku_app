@@ -69,16 +69,19 @@ class NumberPage extends StatelessWidget {
       body: ListView.builder(
           itemCount: number.length,
           itemBuilder: (context, index) {
-            return Item(number: number[index]);
+            return Item(color: Color(0xffEF9235), number: number[index]);
           }),
     );
   }
 
-  List<Widget> getList(List<Number> number) {
-    List<Widget> itemList = [];
-    for (int i = 0; i < number.length; i++) {
-      itemList.add(Item(number: number[i]));
-    }
-    return itemList;
-  }
+  // List<Widget> getList(List<Number> number) {
+  //   List<Widget> itemList = [];
+  //   for (int i = 0; i < number.length; i++) {
+  //     itemList.add(Item(
+  //       number: number[i],
+  //       color: Color(0xffEF9235),
+  //     ));
+  //   }
+  //   return itemList;
+  // }
 }
